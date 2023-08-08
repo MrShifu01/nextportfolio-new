@@ -1,6 +1,7 @@
+"use client";
+
 import React, { useState, createContext } from 'react'
 import { links } from '@/lib/data';
-import { type } from 'os';
 
 type SectionName = typeof links[number]["name"];
 
@@ -8,7 +9,12 @@ type ActiveSectionContextProviderProps = {
     children: React.ReactNode;
 };
 
-const ActiveSectionContext = createContext(null);
+type ActiveSectionContextType = {
+    activeSection: SectionName;
+    setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+};
+
+export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null);
 
 export default function ActiveSectionContextProvider({ children }: ActiveSectionContextProviderProps) {
     const [activeSection, setActiveSection] = useState<SectionName>("Home");
@@ -17,4 +23,12 @@ export default function ActiveSectionContextProvider({ children }: ActiveSection
         {children}
     </ActiveSectionContext.Provider>
   )
+}
+
+export function useActiveSectionContext() {
+    const context = React.useContext(ActiveSectionContext);
+    if (context === null) {
+        throw new Error('useActiveSectionContext must be used within a ActiveSectionContextProvider');
+    }
+    return context;
 }
