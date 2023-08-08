@@ -7,7 +7,7 @@ import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -49,11 +49,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Ricardo.</span> I'm a{" "}
+        <span className="font-bold">Hello, I'm Christian.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">3 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        building <span className="italic">data driven apps</span>. My focus is{" "}
+        <span className="underline">React | Node | Express | Mongo</span>.
       </motion.h1>
 
       <motion.div
@@ -66,25 +66,28 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 flex items-center gap-2 rounded-full text-white px-7 py-3 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 active:bg-gray-900 transition-all"
+          className="group bg-gray-900 flex items-center gap-2 shadow-sm rounded-full text-white px-7 py-3 outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-100 active:bg-gray-900 transition-all"
         >
           Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href=""
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all"
+          href="/ChristianStanderCV.pdf"
+          className="group bg-white px-7 py-3 flex items-center gap-2 shadow-sm rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition-all cursor-pointer border border-black/10"
+          download
         >
           Download CV <HiDownload className="opacity-60 group-hover:translate-y-0.5" />
         </a>
         <a
-          href=""
-          className="bg-white text-gray-700 px-4 py-4 flex items-center gap-2 rounded-full"
+          href="https://www.linkedin.com/in/christian-stander-310818276/"
+          target="_blank"
+          className="bg-white text-gray-700 px-4 py-4 flex items-center gap-2 shadow-sm rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer border border-black/10"
         >
           <BsLinkedin />
         </a>
         <a
-          href=""
-          className="bg-white text-gray-700 px-4 py-4 flex items-center gap-2 rounded-full"
+          href="https://github.com/MrShifu01"
+          target="_blank"
+          className="bg-white text-gray-700 px-4 py-4 flex items-center gap-2 shadow-sm rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer border border-black/10"
         >
           <BsGithub />
         </a>
