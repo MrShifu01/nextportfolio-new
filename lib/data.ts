@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import shifuWatches from "@/public/project1.jpg";
+import shifuBookings from "@/public/project2.jpg";
+import fullStackCrm from "@/public/project3.jpg";
 
 export const links = [
   {
@@ -35,52 +35,60 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "South Africa",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, JavaScript, Bootstrap, Node.js and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
+  },
+  {
+    title: "Graduated bootcamp",
+    location: "HyperionDev, South Africa",
+    description:
+      "At Hyperion Dev's Full Stack Web Developer Bootcamp, I gained a versatile skill set in web development. I mastered front-end technologies like HTML, JavaScript, and CSS, using React.js and Next.js for dynamic websites.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023",
+  },
+  {
+    title: "Graduated BSc Data Science",
+    location: "Sol Plaatje, South Africa",
+    description:
+      "I hold a Bachelor of Science in Data Science, equipping me with versatile skills to tackle complex challenges in the data-driven world. Proficient in Python, R, MATLAB, and Git, I specialize in developing scalable solutions for data analysis and manipulation.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023",
+  },
+  {
+    title: "Finance manager",
+    location: "LMG Microfinance, South Africa",
+    description:
+      "Over the years, I gained extensive hands-on experience in diverse business areas, including administration, data management, debt collection, and staff management.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2012 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Shifu Watches",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A Comprehensive Ecommerce website that has full admin capabilites, PayPal integration and Cart features.",
+    tags: ["React", "Node.js", "MongoDB", "Bootstrap", "Express"],
+    imageUrl: shifuWatches,
   },
   {
-    title: "rmtDev",
+    title: "Shifu Bookings",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "This Airbnb clone is built using the MERN stack, learnt to use the S3 buckets in AWS for storing the uploaded photos.",
+    tags: ["React", "Node.js", "Express", "AWS", "Redux"],
+    imageUrl: shifuBookings,
   },
   {
-    title: "Word Analytics",
+    title: "Full Stack CRM",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "The system is designed to facilitate the management of client information and loan records for a cash loans business.",
+    tags: ["React", "Node.js", "MongoDB", "Tailwind"],
+    imageUrl: fullStackCrm,
   },
 ] as const;
 
@@ -94,14 +102,14 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
+  "Bootstrap",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  "React Query",
+  "JWT",
   "Express",
-  "PostgreSQL",
+  "React Email",
   "Python",
-  "Django",
+  "Pandas",
   "Framer Motion",
 ] as const;
